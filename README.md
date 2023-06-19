@@ -33,8 +33,8 @@ conversion_factor = 1.60934
 print("%0.2f kilometer is equals to %0.2f miles" %(km,km/conversion_factor))
 # convert celcius to farenheit
 celcius = float(input("enter the degree celcius: "))
-# 1 celcius = 33.8 fahrenheit
-# fahrenheit = celsius * 1.8 + 32 
+##1 celcius = 33.8 fahrenheit
+##fahrenheit = celsius * 1.8 + 32 
 fahrenheit = celcius * 1.8 +32
 print(fahrenheit)
 # Python Program to Check if a Number is Positive, Negative or 0
@@ -72,6 +72,20 @@ elif b > c:
 else:
     print("c is greatest")
 ********************************************************************************************************
+# check prime number or not
+num = int(input("enter the number: "))
+if num == 1 :
+    print("not prime number")
+elif num>1 :
+    for i in range(2,num):
+        if num%i == 0 :
+            print("not prime number")
+            break
+        else:
+            print("it is a prime number")
+            break
+else:
+    print("not a prime number")
 
 
 
