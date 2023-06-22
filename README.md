@@ -119,7 +119,15 @@ for i in range(start,end+1):
             break
     else:
         print("{} is a prime number".format(i))
-       
+# armstrong numbers between two intervals \\\ The Armstrong number in Python is the number in which the sum of each digit powered to the total number of digits is the same as the given number \\\
+num = int(input("enter the number: "))
+sum = 0
+for i in str(num):
+    sum += int(i)**len(str(num))
+if sum == num:
+    print("{} is a armstrong number".format(num))
+else:
+    print("{} is not a armstrong number".format(num))
 
 
 
