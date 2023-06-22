@@ -148,6 +148,13 @@ for a in range(len(arr)):
             flag = 1
 if flag == 0:
     print("sorry! there is no such combinations")
+# sum of next 6 consecutive numbers
+num = int(input('Enter the Number : '))
+sum = num
+for i in range(1,6):
+    sum += num+1
+    num += 1
+print(sum)
 
 
 
