@@ -108,6 +108,18 @@ num1 = 54
 num2 = 24
 
 print("The L.C.M. is", compute_lcm(num1, num2))
+# prime numbers in a given range
+start = int(input("enter the starting number: "))
+end = int(input("enter the ending number: "))
+flag = True
+for i in range(start,end+1):
+    for j in range(2,i):
+        if i%j == 0 :
+            print("{} not a prime number".format(i))
+            break
+    else:
+        print("{} is a prime number".format(i))
+       
 
 
 
