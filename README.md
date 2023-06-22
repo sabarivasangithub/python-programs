@@ -128,6 +128,26 @@ if sum == num:
     print("{} is a armstrong number".format(num))
 else:
     print("{} is not a armstrong number".format(num))
+# program to express a number as a sum of two prime numbers
+num = int(input('Enter the Number : '))
+
+arr = []
+for i in range(2,num+1):
+    flag = 0
+    for j in range(2,i):
+        if i%j == 0 :
+            flag = 1
+    if flag == 0 :
+        arr.append(i)
+print(arr)
+flag = 0
+for a in range(len(arr)):
+    for b in range(a+1,len(arr)):
+        if arr[a]+arr[b]==num:
+            print("{} and {} combines and give the value of {}".format(arr[a],arr[b],num))
+            flag = 1
+if flag == 0:
+    print("sorry! there is no such combinations")
 
 
 
