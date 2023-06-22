@@ -155,6 +155,10 @@ for i in range(1,6):
     sum += num+1
     num += 1
 print(sum)
+#  Replace all 0’s with 1 in a given integer
+num = int(input('Enter the Number : '))
+a = str(num).replace('0','1')
+print(int(a))
 
 
 
