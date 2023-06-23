@@ -165,6 +165,14 @@ tot = 1
 for i in range(1,num):
     tot *= i+1
 print(tot)
+# simple interest
+def simple_interest(p,t,r):
+    si = (p*t*r)/100
+    print(si)
+principal = int(input("principal: "))
+time = int(input("time: "))
+rate = int(input("rate; "))
+simple_interest(principal,time,rate)
 
 
 
