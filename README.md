@@ -159,6 +159,13 @@ print(sum)
 num = int(input('Enter the Number : '))
 a = str(num).replace('0','1')
 print(int(a))
+#factorial of a given number
+num = int(input("enter the number: "))
+tot = 1
+for i in range(1,num):
+    tot *= i+1
+print(tot)
+
 
 
 
