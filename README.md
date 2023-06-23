@@ -173,6 +173,27 @@ principal = int(input("principal: "))
 time = int(input("time: "))
 rate = int(input("rate; "))
 simple_interest(principal,time,rate)
+# compound interest
+def compound_interest(p,t,r):
+    a = p*(1 + (r/100))**t
+    compound = a - p
+    print(compound)
+principal = float(input("principal: "))
+time = float(input("time: "))
+rate = float(input("rate; "))
+compound_interest(principal,time,rate)
+# armstrong number
+def armstrong_number(n):
+    total = 0
+    for i in str(n):
+        total += int(i)**len(str(n))
+    if total == n:
+        print(n," is a armstrong number")
+    else:
+        print(n," is not a armstrong number")
+num = int(input("enter the number to be checked: "))
+armstrong_number(num)
+
 
 
 
