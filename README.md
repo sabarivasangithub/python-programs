@@ -238,7 +238,9 @@ def fibonacci_series(n):
         print(" this sequence cannot be done")
 num = int(input("enter the length of the sequence: "))
 fibonacci_series(num)
-        
+# print ASCII value of the character
+character = str(input("enter the character:"))
+print(ord(character))
 
 
 
