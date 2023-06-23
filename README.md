@@ -266,6 +266,15 @@ for i in range(1,num+1):
     arr.append(ele)
 print(arr, " is the formed array")
 print(max(arr)," is the maximum value in the array")
+# ascending order
+a = [3,1,4,9,6,2]
+for i in range(len(a)):
+    for j in range(i+1,len(a)):
+        if a[i]>a[j]:
+            temp = a[j]
+            a[j] = a[i]
+            a[i] = temp
+print(a)
 
 
 
