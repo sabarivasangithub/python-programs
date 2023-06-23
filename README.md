@@ -214,6 +214,30 @@ def fibonacci_series(n):
         print(" this sequence cannot be done")
 num = int(input("enter the length of the sequence: "))
 fibonacci_series(num)
+# finding n-th fibonacci number
+def fibonacci_series(n):
+    f = 0
+    s = 1
+    arr = []
+    if n == 0:
+        print("1")
+    elif n == 1:
+        print("2")
+    elif n == 2:
+        print("3")
+    elif n > 2:
+        arr.append(f)
+        arr.append(s)
+        for i in range(3,n+1):
+            total = f+s
+            arr.append(total)
+            f = s
+            s = total
+        print(arr[n-1])
+    else:
+        print(" this sequence cannot be done")
+num = int(input("enter the length of the sequence: "))
+fibonacci_series(num)
         
 
 
