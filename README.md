@@ -241,7 +241,31 @@ fibonacci_series(num)
 # print ASCII value of the character
 character = str(input("enter the character:"))
 print(ord(character))
-
+# cube sum of first n natural numbers
+num = int(input("enter the number:"))
+result = 0
+for i in range(1,num+1):
+    result += i**3
+print(result)
+# sum of array
+num = int(input("enter the length of the array:"))
+arr = []
+for i in range(1,num+1):
+    ele = int(input("enter the element in the array: "))
+    arr.append(ele)
+print(arr, " is the formed array")
+res = 0
+for j in arr:
+    res += j
+print(res," is the sum of the given array")
+#find largest element in an array
+num = int(input("enter the length of the array:"))
+arr = []
+for i in range(1,num+1):
+    ele = int(input("enter the element in the array: "))
+    arr.append(ele)
+print(arr, " is the formed array")
+print(max(arr)," is the maximum value in the array")
 
 
 
