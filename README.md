@@ -193,6 +193,28 @@ def armstrong_number(n):
         print(n," is not a armstrong number")
 num = int(input("enter the number to be checked: "))
 armstrong_number(num)
+# fibonacci series
+def fibonacci_series(n):
+    f = 0
+    s = 1
+    if n <= 0:
+        print("Try the value of 1 or more!")
+    elif n == 1:
+        print("0")
+    elif n == 2:
+        print(f,s,end = " ")
+    elif n > 2:
+        print(f,s,end= " ")
+        for i in range(3,n+1):
+            total = f+s
+            print(total,end=" ")
+            f = s
+            s = total
+    else:
+        print(" this sequence cannot be done")
+num = int(input("enter the length of the sequence: "))
+fibonacci_series(num)
+        
 
 
 
